@@ -7,9 +7,13 @@ title: bighu's log
 subtitle: '暴躁的程序员'
 description: '使卵石臻与完美的，非锤的打击，而是水的且歌且舞'
 keywords: "blockChain,L2,solidity,EVM,K8s,后端程序员,golang"
-author: bighu630
 language: zh_cn
 timezone: 'Asia/Shanghai'
+
+# ... other configurations
+author:
+  name: ivhu  # 你的姓名
+  email: ivhu@foxmail.com  # 你的邮箱
 
 
 # URL

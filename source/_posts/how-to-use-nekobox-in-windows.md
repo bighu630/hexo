@@ -1,6 +1,7 @@
 ---
 title: windows使用nekobox翻墙
 date: 2024-09-02 10:39:47
+author: ivhu
 tags:
   - 教程
   - 科学上网
@@ -56,7 +57,7 @@ tags:
 
 ![system proxy](https://imgur.com/VspgK4q.png)
 
-## 问题解决
+## 解决无法上网
 
 如果还是有问题，可能可以试试下面的操作
 
