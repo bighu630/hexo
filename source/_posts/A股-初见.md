@@ -1,8 +1,6 @@
 ---
-title:
-  "[object Object]": null
-date:
-  "[object Object]": null
+title: A股-初见
+date: 2024-01-26 20:45:36
 author: ivhu
 categories:
   - 经济
