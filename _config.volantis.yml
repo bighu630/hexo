@@ -1,0 +1,21 @@
+############################### Comments ############################### > start
+#
+comments:
+  title: <i class='fas fa-comments'></i> 评论
+  subtitle:
+  service: giscus
+
+  giscus:
+    repo: "bighu630/bighu630.github.io"
+    repo-id: "R_kgDOIm2L7w"
+    category: "Announcements"
+    category-id: "DIC_kwDOIm2L784CiEGc"
+    mapping: "pathname"
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    theme:
+      light: "light" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+
+############################### Comments ############################### > end
