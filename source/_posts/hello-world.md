@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2022-09-30 15:16:41
 tags:
   - debug
   - hexo 初始化

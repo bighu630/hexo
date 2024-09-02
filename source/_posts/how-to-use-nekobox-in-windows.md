@@ -2,20 +2,25 @@
 title: windows使用nekobox翻墙
 date: 2024-09-02 10:39:47
 author: ivhu
+categories:
+  - 教程
+  - 科学上网
 tags:
   - 教程
   - 科学上网
+  - windows
+  - nekobox
 ---
 
 <meta name="referrer" content="no-referrer" />
 
 ## 安装
 
-由于github国内可能访问不到，这里我吧客户端要用的软件下载下来了
+由于github国内可能访问不到，这里我把客户端要用的软件下载下来了:
 
 <https://ww0.lanzouq.com/ifg4V270qwib>
 
-下载之后是一个zip压缩包，将压缩包解压后就是软件本体了
+下载之后是一个zip压缩包，将压缩包解压后就是软件本体
 
 ![Imgur](https://i.imgur.com/TDXokLN.png)
 
