@@ -125,21 +125,21 @@ sidebar:
           text: '文章数目：'
           unit: '篇'
         runtime:
-          enable: false
+          enable: true
           data: '2020/01/01'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
-          enable: false
+          enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
           siteuv:
-            enable: false
+            enable: true
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            enable: false
+            enable: true
             text: '本站总访问量：'
             unit: '次'
         lastupd:
@@ -171,9 +171,6 @@ navbar:
     - name: 博客
       icon: fa-solid fa-rss
       url: /archives/
-    - name: 分类
-      icon: fa-solid fa-folder-open
-      url: categories/
     - name: 标签
       icon: fa-solid fa-tags
       url: tags/
