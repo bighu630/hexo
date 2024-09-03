@@ -31,5 +31,5 @@ jobs:
           github_token: ${{ secrets.API_TOKEN }}
         run: |
           git config --global user.email ivhu@github.com
-          git config --global user.name ivhu
+          git config --global user.name bighu630
           npx hexo deploy
