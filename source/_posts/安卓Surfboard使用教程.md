@@ -52,9 +52,7 @@ tags:
 
 在工具中选择分流设置，仅让需要翻墙的软件使用vpn
 
-<img src="https://i.imgur.com/bEmUkDu.png" alt="img" style="zoom:67%;" /><img src="https://i.imgur.com/waMATiC.png" alt="img" style="zoom:67%;" />
-
-
+<img src="https://i.imgur.com/bEmUkDu.png" alt="img" style="zoom:67%;display: inline-block;"/><img src="https://i.imgur.com/waMATiC.png" alt="img" style="zoom:67%;display: inline-block;" />
 
 ## 问题修复
 
@@ -66,7 +64,4 @@ tags:
 
 3：开启“绕过tls验证”
 
-<img src="https://i.imgur.com/oteoML4.png" alt="img" style="zoom:67%;" /><img src="https://i.imgur.com/cusPyTe.png" alt="img" style="zoom:67%;" /><img src="https://i.imgur.com/SiMkMt7.png" alt="img" style="zoom:67%;" />
-
-
-
+<img src="https://i.imgur.com/oteoML4.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://i.imgur.com/cusPyTe.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://i.imgur.com/SiMkMt7.png" alt="img" style="zoom:67%;display: inline-block;" />
