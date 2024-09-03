@@ -1,3 +1,18 @@
+############################### Volantis ###############################
+info:
+  theme_name: Ivhu running Log # This is theme's name.
+  theme_docs: https://volantis.js.org/ # This is theme's URL.
+  theme_repo: https://github.com/volantis-x/hexo-theme-volantis
+# Debug 调试模式
+debug: false # false: 关闭调试模式， env：环境配置检查， pjax：调试pjax，rightMenus: 调试右键
+############################### 默认占位图 ###############################
+default:
+  avatar: volantis-static/media/placeholder/avatar/round/3442075.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
+  link: volantis-static/media/placeholder/link/8f277b4ee0ecd.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
+  cover: volantis-static/media/placeholder/cover/76b86c0226ffd.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
+  image: volantis-static/media/placeholder/image/2659360.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
+############################### CSP ###############################
+
 ############################### Cover ############################### > start
 cover:
   height_scheme: half # full, half
@@ -16,7 +31,7 @@ cover:
     - name: 文档
       icon: #
       img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
+      url: /categories/
     - name: tags
       icon: #
       img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
@@ -78,7 +93,7 @@ sidebar:
     music:
       class: music
       display: [desktop, mobile] # [desktop, mobile]
-      pjaxReload: false
+      pjaxReload: true
     # ---------------------------------------
     # category widget
     category:
@@ -170,7 +185,10 @@ navbar:
   menu:
     - name: 博客
       icon: fa-solid fa-rss
-      url: /archives/
+      url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
     - name: 标签
       icon: fa-solid fa-tags
       url: tags/
@@ -180,6 +198,9 @@ navbar:
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
+    - name: 暗黑模式 # 可自定义
+      icon: fa-solid fa-moon # 可自定义
+      toggle: darkmode
   search: Search...   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 #
@@ -406,19 +427,19 @@ plugins:
   ######## Plugins for SEO:
   # npm i hexo-wordcount
   wordcount:
-    enable: #true
+    enable: true
 
   ######## Plugins for ...
   # Button Ripple Effect
   nodewaves:
-    enable: #true
+    enable: true
     css: volantis-static/libs/node-waves/dist/waves.min.css # https://unpkg.com/node-waves@0.7.6/dist/waves.min.css
     js: volantis-static/libs/node-waves/dist/waves.min.js # https://unpkg.com/node-waves@0.7.6/dist/waves.min.js
 
   # fontawesome V6:  https://fontawesome.com/docs/web/style/animate
   # fontawesome animation for fontawesome V5
   fontawesome_animation:
-    enable: #true
+    enable: true
     css: volantis-static/libs/font-awesome-animation/font-awesome-animation.min.css # https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
 
   # Typing Effects
@@ -459,7 +480,7 @@ plugins:
   # APlayer is only available in mainland China.
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
-    enable: #true
+    enable: true
     js:
       aplayer: volantis-static/libs/aplayer/dist/APlayer.min.js # https://unpkg.com/aplayer@1.10/dist/APlayer.min.js
       meting: volantis-static/libs/meting/dist/Meting.min.js # https://unpkg.com/meting@2.0/dist/Meting.min.js
@@ -694,58 +715,11 @@ rightmenus:
   menus:
     link:
       - {id: 'help', name: '常见问题', icon: 'fa-solid fa-question', link: 'https://volantis.js.org/faqs/', group: 'link'}
-      - {id: 'examples', name: '示例博客', icon: 'fa-solid fa-rss', link: 'https://volantis.js.org/examples/', group: 'link'}
-      - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
       - hr
       - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
       - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
-###
-
-# 自定义右键菜单
-rightmenu:
-  enable: false
-  faicon: fa              # 公共图标类型 fa fal fa-solid fa-duotone
-  # hr: 分割线, music: 音乐控制器
-  layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, reading, music]
-  ### 可选功能项 ###
-  print:                  # 只有文章页才允许自定义打印
-    name: 打印页面
-    icon: fa fa-print
-  darkmode:        # 需开启 plugins.darkmodejs
-    name: 暗黑模式
-    icon: fa fa-moon
-  reading:
-    name: 阅读模式
-    icon: fa fa-book-open
-  customPicUrl:    # 右键的图片复制：只有 Chrome 支持，且只支持 PNG 格式的图片。
-    enable: false  # 如果使用了对象存储且开启了自适应 Webp，那么可以提供额外的链接用以替换图片的访问地址
-    old: #https://static.inkss.cn/img/article/
-    new: #https://cdn.jsdelivr.net/gh/inkss/inkss-cdn@master/img/article/
-  music:           # 当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用
-    alwaysShow: true
-  ### 自定义菜单 ###
-  help:
-    name: 常见问题
-    icon: fa fa-question
-    url: https://volantis.js.org/faqs/
-  examples:
-    name: 示例博客
-    icon: fa fa-rss
-    url: https://volantis.js.org/examples/
-  contributors:
-    name: 加入社区
-    icon: fa fa-fan fa-spin
-    url: https://volantis.js.org/contributors/
-  source_docs:
-    name: 本站源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/volantis-docs/
-  source_theme:
-    name: 主题源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/hexo-theme-volantis/
 ############################### Rightmenu ############################### > end
 
 
