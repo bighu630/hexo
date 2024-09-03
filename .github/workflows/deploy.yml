@@ -31,5 +31,5 @@ jobs:
           git config --global user.email ivhu@github.com
           git config --global user.name ivhu
           npx hexo deploy
-        with:
+        env:
           github_token: ${{ secrets.GITHUB_TOKEN }}
