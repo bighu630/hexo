@@ -24,7 +24,7 @@ cover:
   background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: 'Bighu runtime log'
+  title: 'bighu runtime log'
   subtitle: '暴躁的程序员'
   features:
     - name: 分类
@@ -322,8 +322,11 @@ site_footer:
   source: https://github.com/bighu630/bighu630.github.io
   # analytics using leancloud
   analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
+    <span id="lc-sv">本站总访问量为<span id="busuanzi_value_site_pv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>次</span>
+    <span id="lc-uv">访客数为<span id="busuanzi_value_site_uv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>人</span>
+
+  # <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+  # <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: '[Copyright © since 2022 2024](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
