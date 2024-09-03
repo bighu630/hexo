@@ -32,6 +32,8 @@
     "lodash": "^4.17.21",
     "lunr": "^2.3.9",
     "object-assign": "^4.1.1",
-    "prismjs": "^1.29.0"
+    "partial": "^0.0.7",
+    "prismjs": "^1.29.0",
+    "stylus": "^0.63.0"
   }
 }

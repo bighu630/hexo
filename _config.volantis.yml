@@ -731,3 +731,6 @@ search:
   service: hexo  # hexo
   js:
 ############################### Search ############################### > end
+
+structured_data:
+  enable: false
