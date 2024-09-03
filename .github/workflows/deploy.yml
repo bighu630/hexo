@@ -28,8 +28,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          github_token: ${{ secrets.API_TOKEN }}
+          GIT_AUTH_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
-          git config --global user.email ivhu@github.com
-          git config --global user.name bighu630
+          git remote add target https://bighu630:${GIT_AUTH_TOKEN}@github.com/bighu630/bighu630.github.io.git
           npx hexo deploy
