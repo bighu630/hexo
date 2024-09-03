@@ -27,9 +27,9 @@ jobs:
         run: npx hexo generate
 
       - name: Deploy to GitHub Pages
+        env:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email ivhu@github.com
           git config --global user.name ivhu
           npx hexo deploy
-        env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
