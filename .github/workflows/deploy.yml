@@ -22,6 +22,15 @@ jobs:
         run: |
           chmod +x ./install.sh
           ./install.sh
+          
+      - name: Set up SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Generate static files
         run: npx hexo generate
@@ -32,5 +41,4 @@ jobs:
         run: |
           git config --global user.email "ivhu@foxmail.com"
           git config --global user.name "ivhu"
-          git remote add target https://bighu630:${GIT_AUTH_TOKEN}@github.com/bighu630/bighu630.github.io.git
           npx hexo deploy
