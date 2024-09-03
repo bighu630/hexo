@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Hexo 支持的 Node.js 版本
+          node-version: '17'  # Hexo 支持的 Node.js 版本
 
       - name: Install Hexo and dependencies
         run: |
@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.API_TOKEN }}
         run: |
           git config --global user.email ivhu@github.com
           git config --global user.name ivhu
