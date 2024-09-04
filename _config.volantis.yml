@@ -736,3 +736,7 @@ search:
 
 structured_data:
   enable: false
+
+post:
+  index:
+    excerpt: true
