@@ -3,7 +3,7 @@ title: Linux通用grub急救
 date: 2024-07-3 19:41:39
 author: ivhu
 categories:
-  - 编程
+  - 计算机
   - linux
 tags:
   - linux

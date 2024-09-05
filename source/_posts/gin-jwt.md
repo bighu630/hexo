@@ -3,7 +3,7 @@ title: gin & jwt
 date: 2024-01-26 20:06:36
 author: ivhu
 categories:
-  - 编程
+  - 计算机
   - go
 
 tags:

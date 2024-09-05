@@ -3,6 +3,7 @@ title: manjaro安装错误的显卡驱动导致无法开机（解决办法）
 author: ivhu
 date: 2022-06-25 14:42:17
 categories:
+  - 计算机
   - linux
 tags:
   - manjaro
