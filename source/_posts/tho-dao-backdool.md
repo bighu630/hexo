@@ -3,9 +3,10 @@ title: tho dao 合约漏洞
 date: 2024-07-30 13:43:23
 author: ivhu
 categories:
+  - 区块链
   - 以太坊
-  - 合约安全
 tags:
+  - 合约安全
   - solidity
   - the dao
 ---
