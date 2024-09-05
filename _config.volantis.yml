@@ -319,9 +319,10 @@ site_footer:
     - avatar:
       url:
   # site source
-  source: https://github.com/bighu630/bighu630.github.io
+  source: https://bighu630.github.io
   # analytics using leancloud
-  analytics: >
+  analytics: |
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span id="lc-sv">本站总访问量为<span id="busuanzi_value_site_pv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>次</span>
     <span id="lc-uv">访客数为<span id="busuanzi_value_site_uv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>人</span>
 
