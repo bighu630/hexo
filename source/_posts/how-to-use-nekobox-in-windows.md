@@ -13,7 +13,7 @@ tags:
 description： 这篇博客提供了如何在国内环境中安装和使用 Nekobox 客户端的详细指南。步骤包括：安装：提供了一个下载链接并指导如何解压和找到软件本体。使用：描述了如何设置以优化网络速度，包括选择绕过局域网和大陆的选项。翻墙链接导入：讲解了如何导入翻墙链接并启动。开启系统代理：指示如何启用系统代理并避免选择错误的模式。解决无法上网的问题：提供了针对无法上网的故障排除步骤，包括调整证书检查设置。整体来说，博客旨在帮助用户在国内网络环境下顺利安装和配置 Nekobox，以实现网络翻墙。
 ---
 
-<meta name="referrer" content="no-referrer" />
+> 这篇博客提供了如何在国内环境中安装和使用 Nekobox 客户端的详细指南。步骤包括：安装：提供了一个下载链接并指导如何解压和找到软件本体。使用：描述了如何设置以优化网络速度，包括选择绕过局域网和大陆的选项。翻墙链接导入：讲解了如何导入翻墙链接并启动。开启系统代理：指示如何启用系统代理并避免选择错误的模式。解决无法上网的问题：提供了针对无法上网的故障排除步骤，包括调整证书检查设置。整体来说，博客旨在帮助用户在国内网络环境下顺利安装和配置 Nekobox，以实现网络翻墙。
 
 ## 安装
 
@@ -23,7 +23,7 @@ description： 这篇博客提供了如何在国内环境中安装和使用 Neko
 
 下载之后是一个zip压缩包，将压缩包解压后就是软件本体
 
-![Imgur](https://i.imgur.com/TDXokLN.png)
+![Imgur](https://pic.imgdb.cn/item/66da73bad9c307b7e9c6ecf4.png)
 
 软件本体叫nekobox,在文件夹里面找到它，双击打开（你可能会找到两个，其中一个是图片，如果你碰巧打开了图片，不用管它，去找另外一个）
 
@@ -31,17 +31,17 @@ description： 这篇博客提供了如何在国内环境中安装和使用 Neko
 
 打开后长这个样子
 
-![open nekobox](https://i.imgur.com/TSjd8NZ.png)
+![open nekobox](https://pic.imgdb.cn/item/66da73ccd9c307b7e9c6fa5f.png)
 
 在使用前我们先进行一点设置（这样可以加速网速）
 
 - 打开首选项里面的路由设置
 
-![nekobox setting](https://imgur.com/NJodfkW.png)
+![nekobox setting](https://pic.imgdb.cn/item/66da73e3d9c307b7e9c71126.png)
 
 - 在简易路由中 预设里面 选择“绕过局域网和大陆 然后点确定
 
-![router](https://imgur.com/k9YopAO.png)
+![router](https://pic.imgdb.cn/item/66da73efd9c307b7e9c71a7b.png)
 
 回到最开始的地方，将翻墙链接导入进来
 
@@ -49,7 +49,7 @@ description： 这篇博客提供了如何在国内环境中安装和使用 Neko
 
 在我鼠标所在的位置右键，选择从剪贴板导入（注意你要先复制）
 
-![node setting](https://imgur.com/pSyOCZ2.png)
+![node setting](https://pic.imgdb.cn/item/66da73fdd9c307b7e9c726d2.png)
 
 这时候会在这里新增一条记录
 
@@ -61,7 +61,7 @@ description： 这篇博客提供了如何在国内环境中安装和使用 Neko
 
 把这里勾上，注意一定不要勾上面的 Tun模式
 
-![system proxy](https://imgur.com/VspgK4q.png)
+![system proxy](https://pic.imgdb.cn/item/66da740bd9c307b7e9c73148.png)
 
 ## 解决无法上网
 
@@ -71,6 +71,6 @@ description： 这篇博客提供了如何在国内环境中安装和使用 Neko
 
 找到这里的不检查证书服务器，把这里勾上 然后点确认，再次启动试试
 
-![problem fix](https://imgur.com/qPQNrWO.png)
+![problem fix](https://pic.imgdb.cn/item/66da7419d9c307b7e9c73bf9.png)
 
 如果还有问题，那就在看啦。

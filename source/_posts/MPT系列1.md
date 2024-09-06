@@ -20,7 +20,7 @@ tags:
 
 mpt树的恢复与mpt树的更新是有关系的，在以太坊的生命周期中，世界状态的mpt树是根据更新的方式来改变状态的，具体而言，无论是对树做增删改，最后在数据库中都是插入一个新的key,然后根据这个新的key去更新路径上所有的key(更新的过程也是新建key然后插入进去，老key不会丢失)
 
-![MTP结构](https://i.imgur.com/CXXgIW3.png)
+![MTP结构](/home/ivhu/.config/Typora/typora-user-images/image-20240906111324142.png)
 
 根据节点的key-v我们可以知道，树的构建是由下而上的，因为父节点在存储是依赖前一节点的hash,当然分支节点中是在各个分支中写入hash,所以分支节点中包含大量的hash。那么当整个实际状态更新时:
 

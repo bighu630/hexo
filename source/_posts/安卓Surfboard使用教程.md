@@ -19,7 +19,7 @@ description: 本文提供了在安卓设备上使用 Surfboard 的简单教程�
 
 安装建议去google Play上安装
 
-![img](https://i.imgur.com/Rx9RKti.png)
+![img](https://pic.imgdb.cn/item/66da71d7d9c307b7e9c24a3f.png)
 
 长这个样子
 
@@ -27,7 +27,7 @@ description: 本文提供了在安卓设备上使用 Surfboard 的简单教程�
 
 一般情况下你会拿到节点的连接或者订阅：（像是一个网址之类的）
 
-<img src="https://i.imgur.com/sC0V0uO.png" alt="img" style="zoom: 67%;" />
+<img src="https://pic.imgdb.cn/item/66da7279d9c307b7e9c442f0.png" alt="img" style="zoom: 67%;" />
 
 在配置这个选项卡里面，点击右下角的加号，选择最下面这个（从url导入）
 
@@ -37,7 +37,7 @@ description: 本文提供了在安卓设备上使用 Surfboard 的简单教程�
 
 在仪表盘页面，点击右下角的启动图标就可以（强烈建议出站模式选规则，可以避免国内网站也走翻墙服务）
 
-<img src="https://i.imgur.com/jSfWUxp.png" alt="img" style="zoom:67%;" />
+<img src="https://pic.imgdb.cn/item/66da7293d9c307b7e9c49917.png" alt="img" style="zoom:67%;" />
 
 ## 测试（看是否可用）
 
@@ -53,7 +53,7 @@ description: 本文提供了在安卓设备上使用 Surfboard 的简单教程�
 
 在工具中选择分流设置，仅让需要翻墙的软件使用vpn
 
-<img src="https://i.imgur.com/bEmUkDu.png" alt="img" style="zoom:67%;display: inline-block;"/><img src="https://i.imgur.com/waMATiC.png" alt="img" style="zoom:67%;display: inline-block;" />
+<img src="https://pic.imgdb.cn/item/66da72add9c307b7e9c4ea8f.png" alt="img" style="zoom:67%;display: inline-block;"/><img src="https://pic.imgdb.cn/item/66da72c2d9c307b7e9c5137a.png" alt="img" style="zoom:67%;display: inline-block;" />
 
 ## 问题修复
 
@@ -65,4 +65,4 @@ description: 本文提供了在安卓设备上使用 Surfboard 的简单教程�
 
 3：开启“绕过tls验证”
 
-<img src="https://i.imgur.com/oteoML4.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://i.imgur.com/cusPyTe.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://i.imgur.com/SiMkMt7.png" alt="img" style="zoom:67%;display: inline-block;" />
+<img src="https://pic.imgdb.cn/item/66da72d4d9c307b7e9c52461.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://pic.imgdb.cn/item/66da72e6d9c307b7e9c60b1b.png" alt="img" style="zoom:67%;display: inline-block;" /><img src="https://pic.imgdb.cn/item/66da7302d9c307b7e9c668e6.png" alt="img" style="zoom:67%;display: inline-block;" />
