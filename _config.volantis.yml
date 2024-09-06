@@ -394,7 +394,7 @@ plugins:
 
   ######## Plugins to optimize the experience:
   # 代码高亮
-  code_highlight: highlightjs # highlightjs or prismjs
+  code_highlight: prismjs # highlightjs or prismjs
   # highlight.js
   highlightjs:
     copy_code: true
@@ -409,6 +409,9 @@ plugins:
   # https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS
   prismjs:
     copy_code: true
+    preprocess: true
+    line_number: false
+    tab_replace: ''
     # Please set hexo.config.highlight.enable = false !!! set hexo.config.prismjs.enable = true !!!
     js:
       - https://unpkg.com/prismjs/components/prism-core.min.js
