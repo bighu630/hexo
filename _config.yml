@@ -50,7 +50,7 @@ relative_link: false
 future: true
 syntax_highlighter: prismjs
 highlight:
-  enable: true
+  enable: false
   line_number: false
   auto_detect: true
   tab_replace: ''
