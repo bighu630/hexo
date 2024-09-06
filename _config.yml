@@ -113,5 +113,5 @@ menu:
 deploy:
   type: 'git'
   repo: git@github.com:bighu630/bighu630.github.io.git
-  branch: main
+  branch: master
   message: 'deploy from hexo'
