@@ -70,7 +70,7 @@ sidebar:
         - icon: fa-solid fa-rss
           url: /atom.xml
         - icon: fa-solid fa-envelope
-          url: ivhu@foxmail.com
+          url: mailto:ivhu@foxmail.com
         - icon: fab fa-github
           url: https://github.com/bighu630
         - icon: fa-solid fa-headphones-alt
