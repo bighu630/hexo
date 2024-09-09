@@ -638,7 +638,7 @@ plugins:
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: #true
+    enable: true
     js: volantis-static/libs/scrollreveal/dist/scrollreveal.min.js # https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 32px
     duration: 800 # ms
@@ -665,12 +665,12 @@ plugins:
 
   # Typing Effects
   comment_typing:
-    enable: #true
+    enable: true
     js: volantis-static/libs/comment_typing/comment_typing.js # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js
 
   # 视差滚动效果 Slide Background
   parallax:
-    enable: #true
+    enable: true
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
     duration: 10000       # Duration (ms)
@@ -697,6 +697,7 @@ plugins:
       - volantis-static/media/wallpaper/minimalist/2020/052.webp
       - volantis-static/media/wallpaper/minimalist/2020/054.webp
       - volantis-static/media/wallpaper/minimalist/2020/056.webp
+
 
   # APlayer is only available in mainland China.
   # APlayer config: https://github.com/metowolf/MetingJS
