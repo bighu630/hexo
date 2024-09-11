@@ -4,7 +4,8 @@ author: ivhu
 date: 2024-09-10 20:56:05
 categories:
   - 区块链
-  - [二层, 以太坊]
+  - 以太坊
+  - 二层
 tags:
   - 以太坊
   - L2
