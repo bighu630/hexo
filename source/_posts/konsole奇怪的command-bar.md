@@ -3,11 +3,12 @@ title: konsole奇怪的command bar
 author: ivhu
 date: 2024-09-11 17:22:58
 categories:
- - linux
- - kde
+  - 计算机
+  - linux
 tags:
- - konsole
- - command bar
+  - kde
+  - konsole
+  - command bar
 description:
 ---
 
