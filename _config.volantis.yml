@@ -95,7 +95,7 @@ cover:
   background: https://bing.img.run/rand.php
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'bighu runtime log'
-  subtitle: '愉悦的程序员'
+  subtitle: '想要暴躁的程序员'
   features:
     - name: 分类
       icon: #
@@ -481,8 +481,8 @@ custom_css:
       style: normal
     bodyfont:
       fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'UbuntuMono'
-      url: volantis-static/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      name: 'PingFang Medium.ttf'
+      url: https://github.com/paraself/PingFang-Fonts/raw/master/PingFang%20Medium.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
       style: normal
     codefont:
@@ -762,9 +762,9 @@ plugins:
   # 视差滚动效果 Slide Background
   parallax:
     enable: true
-    position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
+    position: fixed       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
-    duration: 10000       # Duration (ms)
+    duration: 30000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - volantis-static/media/wallpaper/minimalist/2020/001.webp
