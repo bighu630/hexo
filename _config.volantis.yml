@@ -144,10 +144,10 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    top_meta: [author, category, date, counter,wordcount] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
-    bottom_meta: [updated, tags, share]
+    bottom_meta: [updated, tags, share,wordcount]
     # ----------------
     # 文章页脚组件
     footer_widget:
@@ -645,7 +645,7 @@ color_scheme:
 plugins:
   ################ required plugins ################
   # jquery
-  globalJquery: false # 全局引入 jquery
+  globalJquery: true # 全局引入 jquery
   jquery: volantis-static/libs/jquery/dist/jquery.min.js # https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
   # fontawesome Pro 版本：https://cdn.jsdelivr.net/gh/inkss/fontawesome@6.0.0/css/all.min.css
   fontawesome: volantis-static/libs/@fortawesome/fontawesome-free/css/all.min.css # https://unpkg.com/@fortawesome/fontawesome-free@6.1/css/all.min.css
@@ -741,6 +741,7 @@ plugins:
   wordcount:
     enable: true
 
+
   ######## Plugins for ...
   # Button Ripple Effect
   nodewaves:
@@ -753,6 +754,11 @@ plugins:
   fontawesome_animation:
     enable: true
     css: volantis-static/libs/font-awesome-animation/font-awesome-animation.min.css # https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
+
+  feed:
+    type: atom
+    path: atom.xml
+    limit: 20
 
   # Typing Effects
   comment_typing:
