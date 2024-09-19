@@ -8,7 +8,6 @@ categories:
 tags:
   - 区块链
   - fabric
-  - CA
 description:
 ---
 

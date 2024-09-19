@@ -7,7 +7,6 @@ categories:
   - 二层
 tags:
   - solidity
-  - ch
   - vrf
 description:
 ---
@@ -197,7 +196,7 @@ uint16 immutable requestConfirmations = 3;  //官方推荐配置
 
 首先我们需要去chainlink上领取一点测试币（link币和eth币，两个都要，如有已经有了可以跳过）
 
-网址： https://faucets.chain.link/ 
+网址： https://faucets.chain.link/
 
 ![image-20240913182431182](https://s2.loli.net/2024/09/13/FQyncdECKbWxgOv.png)
 
@@ -207,7 +206,7 @@ uint16 immutable requestConfirmations = 3;  //官方推荐配置
 
 ![image-20240913182732964](https://s2.loli.net/2024/09/13/QtjAy4Ik1dzbTOw.png)
 
-填完信息后，还是这样网址，下面会出现你的sub 
+填完信息后，还是这样网址，下面会出现你的sub
 
 ![image-20240913182948316](https://s2.loli.net/2024/09/13/WadlCnxB6PXRDMk.png)
 

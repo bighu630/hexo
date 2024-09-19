@@ -8,7 +8,6 @@ categories:
 tags:
   - kde
   - konsole
-  - command bar
 description:
 ---
 

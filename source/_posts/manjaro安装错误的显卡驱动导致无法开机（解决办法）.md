@@ -7,7 +7,7 @@ categories:
   - linux
 tags:
   - manjaro
-  - 显卡驱动问题
+  - 显卡驱动
 friends:
   - https://www.i4k.xyz/article/Fmj_Zjq/106762144
 description:

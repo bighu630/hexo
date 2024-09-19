@@ -6,7 +6,7 @@ categories:
   - 计算机
   - 运维
 tags:
-  - cf
+  - cloudflare
   - nginx
 description: 这篇博客介绍了如何使用Cloudflare和Nginx，在同一服务器的443端口上托管多个服务。通过为不同子域名配置Nginx反向代理，将请求路由到不同的本地服务，并使用Cloudflare的SSL证书和CDN加速访问。
 ---

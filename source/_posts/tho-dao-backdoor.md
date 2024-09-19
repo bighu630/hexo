@@ -8,7 +8,6 @@ categories:
 tags:
   - 合约安全
   - solidity
-  - the dao
 ---
 
 ## 什么是 TheDao 漏洞？
