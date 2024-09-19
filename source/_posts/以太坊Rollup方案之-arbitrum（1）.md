@@ -9,8 +9,10 @@ tags:
   - 以太坊
   - L2
   - arbitrum
-description:
+description: 这篇文章深入探讨了Rollup的概念及其在以太坊扩容中的作用，特别是Arbitrum的实现方式。Rollup作为Layer 2扩容解决方案，通过将交易数据汇总到独立的Rollup链中，减轻了以太坊主链的负担。文章对两种主要的Rollup类型进行了对比：Optimistic Rollup（如Arbitrum）和ZK Rollup，分别介绍了它们在交易验证上的不同方法。
 ---
+
+> 这篇文章深入探讨了Rollup的概念及其在以太坊扩容中的作用，特别是Arbitrum的实现方式。Rollup作为Layer 2扩容解决方案，通过将交易数据汇总到独立的Rollup链中，减轻了以太坊主链的负担。文章对两种主要的Rollup类型进行了对比：Optimistic Rollup（如Arbitrum）和ZK Rollup，分别介绍了它们在交易验证上的不同方法。
 
 ## 什么是Rollup？
 
