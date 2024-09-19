@@ -8,8 +8,10 @@ categories:
 tags:
   - 区块链
   - fabric
-description:
+description: 这篇博客详细介绍了在Manjaro Linux虚拟机上安装和配置Docker环境的步骤，包括安装Vim、Docker、Docker Compose和VSCode，以及设置Go环境和Hyperledger Fabric。作者提供了具体的命令和配置，帮助用户无须sudo即可使用Docker，并测试了Fabric网络的连通性，展示了顺利启动测试网络后应有的结果，尽管有部分图片在迁移中丢失。
 ---
+
+> 这篇博客详细介绍了在Manjaro Linux虚拟机上安装和配置Docker环境的步骤，包括安装Vim、Docker、Docker Compose和VSCode，以及设置Go环境和Hyperledger Fabric。作者提供了具体的命令和配置，帮助用户无须sudo即可使用Docker，并测试了Fabric网络的连通性，展示了顺利启动测试网络后应有的结果，尽管有部分图片在迁移中丢失。
 
 ## 环境说明
 
