@@ -59,7 +59,7 @@ navbar:
   visiable: auto # always, auto
   logo:  # choose [img] or [icon + title]
     img: /img/avator.svg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
-    icon:
+    icon: /img/icon.svg
     title:
   menu:
     - name: 博客
@@ -147,7 +147,7 @@ article:
     top_meta: [author, category, date, counter,wordcount] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
-    bottom_meta: [updated, tags, share,wordcount]
+    bottom_meta: [updated, tags, share]
     # ----------------
     # 文章页脚组件
     footer_widget:
