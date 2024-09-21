@@ -60,7 +60,7 @@ navbar:
   logo:  # choose [img] or [icon + title]
     img: /img/avator.svg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon: /img/icon.svg
-    title:
+    title: bighu log
   menu:
     - name: 博客
       icon: fa-solid fa-rss

@@ -4,6 +4,7 @@
 
 # Site
 title: bighu's log
+favicon: /img/icon.svg
 subtitle: '暴躁的程序员'
 description: '使卵石臻与完美的，非锤的打击，而是水的且歌且舞'
 keywords: "blockChain,L2,solidity,EVM,K8s,后端程序员,golang"
