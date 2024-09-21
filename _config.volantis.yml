@@ -95,7 +95,7 @@ cover:
   background: https://bing.img.run/rand.php
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'bighu runtime log'
-  subtitle: '想要暴躁的程序员'
+  subtitle: '暴躁的程序员'
   features:
     - name: 分类
       icon: #
