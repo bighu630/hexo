@@ -4,7 +4,6 @@ author: ivhu
 date: 2024-09-12 21:06:45
 categories:
   - 随笔
-  - 哲学
 tags:
   - 自我
   - 我是谁
