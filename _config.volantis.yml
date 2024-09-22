@@ -64,7 +64,7 @@ navbar:
   menu:
     - name: 博客
       icon: fa-solid fa-rss
-      url: /
+      url: /archives/
     - name: 分类
       icon: fa-solid fa-folder-open
       url: categories/
