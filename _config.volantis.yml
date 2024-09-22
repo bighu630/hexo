@@ -1,6 +1,6 @@
 ############################### Volantis ###############################
 info:
-  theme_name: Ivhu running Log # This is theme's name.
+  theme_name: volantis # This is theme's name.
   theme_docs: https://volantis.js.org/ # This is theme's URL.
   theme_repo: https://github.com/volantis-x/hexo-theme-volantis
 # Debug 调试模式
