@@ -305,7 +305,7 @@ sidebar:
       display: [desktop, mobile] # [desktop, mobile]
       avatar: /img/avator.svg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       shape: rectangle # circle, rectangle
-      url: /about/
+      url: /
       title:
       subtitle:
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
