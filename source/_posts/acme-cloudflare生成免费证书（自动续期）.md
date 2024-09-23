@@ -13,7 +13,7 @@ description:
 
 ## acme DNSapi
 
-acme DNSapi的作用是在申请证书时使用dns校验，acme可以通过dnsapi在对应的dns管理平台提交对应的dns记录。玩过证书的朋友都知道，证书申请时有三种验证方式
+acme DNSapi的作用是在申请证书时使用dns校验，acme可以通过dnsapi在对应的dns管理平台提交对应的dns记录。玩过证书的朋友都知道，证书申请时有三种验证方式:
 
 - 邮箱验证：需要邮箱与域名绑定（细节要求我没试过）
 - 文件验证：文件验证时证书管理方会要求你在服务器的指定路径上放一个指定文件（内容也是他们定），然后开放80端口，他们会去下载这个文件从而验证你的身份。申请证书时你需要去你的服务器上操作，还要开放指定端口
@@ -25,7 +25,7 @@ acme DNSapi的作用是在申请证书时使用dns校验，acme可以通过dnsap
 
 [acme dns api doce](https://github.com/acmesh-official/acme.sh/wiki/dnsapi#using-the-new-cloudflare-api-token-you-will-get-this-after-normal-login-and--scroll-down-on-dashboard-and-copy-credentials)
 
-根据上面的文档可以看到cloudflare dns api 有两种方式获取
+根据上面的文档可以看到cloudflare dns api 有两种方式获取:
 
 - 生成cloudflare的全局token（全局token拥有cloudflare的所有权限，大部分是acme用不到的）
 - 生成cloudflare的DNS权限token（推荐，够acme用的了）
@@ -42,7 +42,7 @@ acme DNSapi的作用是在申请证书时使用dns校验，acme可以通过dnsap
 
 ![image-20240923085941855](https://s2.loli.net/2024/09/23/ktzyeIHSbfJd9mF.png)
 
-按照下面的内容填写
+按照下面的内容填写:
 
 ![image-20240923090119372](https://s2.loli.net/2024/09/23/NcAqGh94ifVkIaT.png)
 
@@ -50,15 +50,15 @@ acme DNSapi的作用是在申请证书时使用dns校验，acme可以通过dnsap
 
 区域资源 `包括` -> `特定区域` -> 在下拉列表里选你的域名（你也可以在第二个框里面选择`所有区域`）
 
-剩下都不变，点继续，跳转到这个页面
+剩下都不变，点继续，跳转到这个页面:
 
 ![image-20240923090358443](https://s2.loli.net/2024/09/23/HnLjAY7sqb95zar.png)
 
-点击生成令牌，就会产生一个令牌，令牌生成后第一时间记录下来，这个令牌只显示一次，刷新页面后就看不到了
+点击生成令牌，就会产生一个令牌，令牌生成后第一时间记录下来，这个令牌只显示一次，刷新页面后就看不到了。
 
 ### 获取cloudflare的用户信息
 
-点到cloudflare中对应的网页管理页面，在api的地方可以看到两个ID
+点到cloudflare中对应的网页管理页面，在api的地方可以看到两个ID:
 
 ![image-20240923090719587](https://s2.loli.net/2024/09/23/vRAkuQhniUmLYg5.png)
 
@@ -139,4 +139,4 @@ acme.sh --issue --dns dns_cf -d test.fun -d "*.test.fun"
 0 4 * * * systemctl reload nginx
 ```
 
-表示每天4：00 重启nginx ，因为nginx的证书需要重启之后才能重载
+表示每天4：00 重启nginx ，因为nginx的证书需要重启之后才能重载。
