@@ -470,17 +470,17 @@ custom_css:
     h6: 1rem
     list: .9375rem
     meta: .875rem
-    code: 1rem
+    code: .9375rem
     footnote: .78125rem
   fontfamily:
     logofont:
-      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: '"PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Varela Round'
-      url: volantis-static/media/fonts/VarelaRound/VarelaRound-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      url: https://github.com/paraself/PingFang-Fonts/raw/master/PingFang%20Medium.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: '"PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'PingFang Medium.ttf'
       url: https://github.com/paraself/PingFang-Fonts/raw/master/PingFang%20Medium.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
