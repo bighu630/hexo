@@ -453,7 +453,7 @@ custom_css:
     h2: 8px # Spacing above H2 (only px unit)
     h3: 6px # Spacing above H3 (only px unit)
     h4: 4px # Spacing above H4 (only px unit)
-    p: 1em # Paragraph spacing between paragraphs
+    p: 8px # Paragraph spacing between paragraphs
     line_height: normal # normal, 1.5, 1.75, 2 ...
   border_radius:
     card: 8px
@@ -466,10 +466,10 @@ custom_css:
     h2: 1.5rem
     h3: 1.25rem
     h4: 1.125rem
-    h5: 1rem
-    h6: 1rem
+    h5: 1.1rem
+    h6: 1.1rem
     list: .9375rem
-    meta: .875rem
+    meta: 1rem
     code: .9375rem
     footnote: .78125rem
   fontfamily:
@@ -486,7 +486,7 @@ custom_css:
       weight: normal
       style: normal
     codefont:
-      fontfamily: 'Menlo, UbuntuMono, Monaco'
+      fontfamily: 'hack'
       # name: 'Monaco'
       # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
       # weight: normal
@@ -706,7 +706,7 @@ plugins:
     # js: https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js # Please set hexo.config.highlight.enable = false !!!
     # css: https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/default.min.css
     js: https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js
-    css: https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/tokyo-night-dark.css
+    css: https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/atom-one-dark.css
     hljs: true
     # # # more: https://www.jsdelivr.com/package/npm/@highlightjs/cdn-assets?path=styles
 
