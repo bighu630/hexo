@@ -43,8 +43,8 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 请选择您要使用的密钥类型：
-   (1) RSA 和 RSA 
-   (2) DSA 和 Elgamal 
+   (1) RSA 和 RSA
+   (2) DSA 和 Elgamal
    (3) DSA（仅用于签名）
    (4) RSA（仅用于签名）
    (7) DSA（自定义用途）
@@ -52,32 +52,32 @@ There is NO WARRANTY, to the extent permitted by law.
    (9) ECC（签名和加密） *默认*
   (10) ECC（仅用于签名）
   (11) ECC（自定义用途）
-  (13) 现有密钥 
- （14）卡中现有密钥 
-您的选择是？ 
+  (13) 现有密钥
+ （14）卡中现有密钥
+您的选择是？
 ```
 
 这里可以选择密钥类型，密钥类型只是处于安全考虑，不会影响gpg的使用（也就是不管你用什么类型的签名方案，不影响签名/验签时的参数），这里选择RSA， 自定义用途（也就是这里的8,自定义用途是因为我们想要限制这个密钥的功能）
 
 ```
-RSA 密钥的可实现的功能： 签名（Sign） 认证（Certify） 加密（Encrypt） 身份验证（Authenticate） 
-目前启用的功能： 签名（Sign） 认证（Certify） 加密（Encrypt） 
+RSA 密钥的可实现的功能： 签名（Sign） 认证（Certify） 加密（Encrypt） 身份验证（Authenticate）
+目前启用的功能： 签名（Sign） 认证（Certify） 加密（Encrypt）
 
    (S) 签名功能开关
    (E) 加密功能开关
    (A) 身份验证功能开关
    (Q) 已完成
 
-您的选择是？ 
+您的选择是？
 ```
 
 到这里我们可以选择主密钥的功能。
 
-我最主密钥他不需要签名与加密的功能，保留认证功能来生成子密钥就可以，所以分别输入S 回车 E 回车 Q 回车
+主密钥不需要签名与加密的功能，保留认证功能来生成子密钥就可以，所以分别输入S 回车 E 回车 Q 回车
 
 ```shell
 RSA 密钥的长度应在 1024 位与 4096 位之间。
-您想要使用的密钥长度？(3072) 
+您想要使用的密钥长度？(3072)
 ```
 
 这里密钥长度可以用默认，但是建议用4096，主密钥一般不用，所以长一点更安全。
@@ -89,7 +89,7 @@ RSA 密钥的长度应在 1024 位与 4096 位之间。
       <n>w = 密钥在 n 周后过期
       <n>m = 密钥在 n 月后过期
       <n>y = 密钥在 n 年后过期
-密钥的有效期限是？(0) 
+密钥的有效期限是？(0)
 ```
 
 有效期，主密钥可以设置为0，方便管理
@@ -119,7 +119,7 @@ uid                      uid
 进入密钥管理
 
 ```shell
-gpg --edit-key --expert 006F375FE8D4C1F404A63B2F44B8540AB57DFB0C 
+gpg --edit-key --expert 006F375FE8D4C1F404A63B2F44B8540AB57DFB0C
 ```
 
 注意后面这一段是上面生成的密钥id
@@ -138,9 +138,9 @@ gpg> addkey
   (10) ECC（仅用于签名）
   (11) ECC（自定义用途）
   (12) ECC（仅用于加密）
-  (13) 现有密钥 
- （14）卡中现有密钥 
-您的选择是？ 
+  (13) 现有密钥
+ （14）卡中现有密钥
+您的选择是？
 ```
 
 这里选择10,然后选择曲线（这里选什么都不影响操作，只是不同算法的安全属性不一样）
@@ -151,10 +151,10 @@ gpg> addkey
 
 ```shell
 sec  rsa4096/44B8540AB57DFB0C
-     创建于：2024-10-24  有效至：永不       可用于：C   
+     创建于：2024-10-24  有效至：永不       可用于：C
      信任度：绝对        有效性：绝对
 ssb  ed25519/5D132C295B0C40F4
-     创建于：2024-10-24  有效至：永不       可用于：S 
+     创建于：2024-10-24  有效至：永不       可用于：S
 ```
 
 ssb表示我们的子密钥，密钥ID是5D132C295B0C40F4
@@ -204,4 +204,3 @@ gpg --send-keys keyId --keyserver hkps://hkps.pool.sks-keyservers.net
 ```shell
 gpg --delete-secret-keys keyId
 ```
-
