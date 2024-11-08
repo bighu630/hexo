@@ -582,7 +582,7 @@ color_scheme:
     # 区块和代码块背景色
     block: '#181818'
     # 代码块高亮时的背景色
-    codeblock: '#FFF7EA'
+    codeblock: '#343a3c'
     # 行内代码颜色
     inlinecode: '#D56D28'
 
