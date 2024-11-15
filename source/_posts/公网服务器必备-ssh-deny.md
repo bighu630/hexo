@@ -14,13 +14,13 @@ description:
 
 公网上的服务器被一群无聊的人做密码爆破（我曾经也是其中的一员😀）.
 
-虽然大概率是不会被突破的，但是还是小心为上，所以着一期来看看怎么自动化封ip
+虽然大概率是不会被突破的，但是还是小心为上，所以这一期来看看怎么自动化封ip
 
 **不啰嗦直接跳到 `ssh 自动封禁`**
 
 ## 找日志
 
-首先我们需要找具体是什么服务正在被爆破，目前最多的是ssh服务，因为一般服务器都会开启ssh来让你远程登陆，当然如果有远程桌面需求的花xrdc/vnc服务可能也会开起来
+首先我们需要找具体是什么服务正在被爆破，目前最多的是ssh服务，因为一般服务器都会开启ssh来让你远程登陆，当然如果有远程桌面需求的话xrdc/vnc服务可能也会开起来
 
 我们以ssh为例：
 
@@ -52,32 +52,31 @@ cat /var/log/auth.log|awk '/Failed/{print $(NF-3)}'|sort|uniq -c|awk '{print $2"
 
 ## 封ip
 
-linux上面有一个`/etc/hosts.deny`文件，可以用来封ip，格式如下
+linux上面有一个`/etc/hosts.deny`文件，可以用来封ip
 
-我们只需要找到上面的ip,然后校验ip是否已经被封，如果没有，则将ip写入这个文件
+我们只需要找到上面日志中的ip,然后校验ip是否已经被封，如果没有，则将ip写入这个文件
 
 > **为什么要判断ip是否已经被封禁**
 > 我们会每隔一段时间读取一下日志文件，封禁有问题的ip,所以以前封禁过的ip还是会捕捉到
 
 ## ssh 自动封禁
 
-这里就之间给出脚本
+这里就直接给出脚本
 
 ```bash
 cat /var/log/auth|awk '/Failed/{print $(NF-3)}'|sort|uniq -c|awk '{print $2"="$1;}' > /black.list
-for i in `cat  /black.list`
+for i in `cat /black.list`
 do
-  IP=`echo $i |awk -F= '{print $1}'`
-  NUM=`echo $i|awk -F= '{print $2}'`
-  echo $IP=$NUM
-  if [ $NUM -gt 10 ]; then
-    grep $IP /etc/hosts.deny > /dev/null
-    if [ $? -gt 0 ];then
-      echo "sshd:$IP:deny" >> /etc/hosts.deny
+    IP=`echo $i |awk -F= '{print $1}'`
+    NUM=`echo $i|awk -F= '{print $2}'`
+    echo $IP=$NUM
+    if [ $NUM -gt 10 ]; then
+        grep $IP /etc/hosts.deny > /dev/null
+        if [ $? -gt 0 ];then
+            echo "sshd:$IP:deny" >> /etc/hosts.deny
+        fi
     fi
-  fi
 done
-
 ```
 
 其中`black.list`是一个临时文件，随便放哪儿都可以
@@ -87,7 +86,7 @@ done
 使用`crontab -e` 打开cron 的编辑器,在最后添加如下
 
 ```
-0 */1 * * *  sh /脚本绝对路径.sh
+0 */1 * * * sh /脚本绝对路径.sh
 
 ```
 
