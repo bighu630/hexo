@@ -4,8 +4,9 @@ author: ivhu
 date: 2024-12-15 10:51:52
 categories:
   - 区块链
-  - arbitrum
+  - 二层
 tags:
+  - arbitrum
   - 资产桥
 description:
 ---
