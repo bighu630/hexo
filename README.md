@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] arbitrum 资产桥
+- [x] [arbitrum 资产桥](https://blog.whosworld.fun/2024/12/15/arbitrum-%E8%B5%84%E4%BA%A7%E6%A1%A5%E5%90%88%E7%BA%A6/)
 - [ ] chainlink 链下计算
 - [ ] verkle Tree
 - [ ] MPT
