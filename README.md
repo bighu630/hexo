@@ -4,7 +4,7 @@
 - [ ] chainlink 链下计算
 - [ ] verkle Tree
 - [ ] MPT
-- [ ] 合约升级
+- [x] 合约升级
 - [ ] EVM系列
 - [ ] solidity合约漏洞
 
