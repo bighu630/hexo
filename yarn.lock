@@ -262,10 +262,10 @@ agent-base@6:
   dependencies:
     debug "4"
 
-algoliasearch-helper@3.22.5:
-  version "3.22.5"
-  resolved "https://registry.npmjs.org/algoliasearch-helper/-/algoliasearch-helper-3.22.5.tgz"
-  integrity sha512-lWvhdnc+aKOKx8jyA3bsdEgHzm/sglC4cYdMG4xSQyRiPLJVJtH/IVYZG3Hp6PkTEhQqhyVYkeP9z2IlcHJsWw==
+algoliasearch-helper@3.24.3:
+  version "3.24.3"
+  resolved "https://registry.yarnpkg.com/algoliasearch-helper/-/algoliasearch-helper-3.24.3.tgz#9a358c3110bcd912e79ef606a6e7bdd7725d22ee"
+  integrity sha512-3QKg5lzSfUiPN8Hn1ViHEGv6PjK7i4SFEDLzwlSzPO/4mVOsyos7B7/AsEtFQW5KHHPiCq6DyJl+mzg7CYlEgw==
   dependencies:
     "@algolia/events" "^4.0.1"
 
@@ -1376,30 +1376,30 @@ inherits@2, inherits@2.0.4, inherits@^2.0.3, inherits@~2.0.1:
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-instantsearch-ui-components@0.9.0:
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/instantsearch-ui-components/-/instantsearch-ui-components-0.9.0.tgz"
-  integrity sha512-ugQ+XdPx3i3Sxu+woRo6tPE0Fz/kWd4KblTUfZD1TZZBsm/8qFvcbg5dVBDvXX9v7ntoyugXCzC/XCZMzrSkig==
+instantsearch-ui-components@0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/instantsearch-ui-components/-/instantsearch-ui-components-0.11.1.tgz#664ca03f657079946e459af72fa8d2674799c466"
+  integrity sha512-ZqUbJYYgObQ47J08ftXV1KNC1vdEoiD4/49qrkCdW46kRzLxLgYXJGuEuk48DQwK4aBtIoccgTyfbMGfcqNjxg==
   dependencies:
     "@babel/runtime" "^7.1.2"
 
-instantsearch.js@^4.75.4:
-  version "4.75.4"
-  resolved "https://registry.npmjs.org/instantsearch.js/-/instantsearch.js-4.75.4.tgz"
-  integrity sha512-mgffSYa+URm8GDNNImg1yX4ak4LobhhtHVCxwjxVfpuODB09O7C97oZ/4UWKhw1EAJ5egYoli49Lt1CSGM5wkA==
+instantsearch.js@^4.78.1:
+  version "4.78.1"
+  resolved "https://registry.yarnpkg.com/instantsearch.js/-/instantsearch.js-4.78.1.tgz#cee799b920ba08c7c4e5af5ba591b86a1d80af1d"
+  integrity sha512-nDTWQ6DUxYzBZfkSxb/QJsYMZPPU8SGlGurn9147ABvA5Eumtxmk3Qy55EBMl0VxKVltGy3axAYMRB/gKIIHkg==
   dependencies:
     "@algolia/events" "^4.0.1"
     "@types/dom-speech-recognition" "^0.0.1"
     "@types/google.maps" "^3.55.12"
     "@types/hogan.js" "^3.0.0"
     "@types/qs" "^6.5.3"
-    algoliasearch-helper "3.22.5"
+    algoliasearch-helper "3.24.3"
     hogan.js "^3.0.2"
     htm "^3.0.0"
-    instantsearch-ui-components "0.9.0"
+    instantsearch-ui-components "0.11.1"
     preact "^10.10.0"
     qs "^6.5.1 < 6.10"
-    search-insights "^2.15.0"
+    search-insights "^2.17.2"
 
 is-binary-path@~2.1.0:
   version "2.1.0"
@@ -2128,10 +2128,10 @@ saxes@^6.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-search-insights@^2.15.0:
-  version "2.17.2"
-  resolved "https://registry.npmjs.org/search-insights/-/search-insights-2.17.2.tgz"
-  integrity sha512-zFNpOpUO+tY2D85KrxJ+aqwnIfdEGi06UH2+xEb+Bp9Mwznmauqc9djbnBibJO5mpfUPPa8st6Sx65+vbeO45g==
+search-insights@^2.17.2:
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/search-insights/-/search-insights-2.17.3.tgz#8faea5d20507bf348caba0724e5386862847b661"
+  integrity sha512-RQPdCYTa8A68uM2jwxoY842xDhvx3E5LFL1LxvxCNMev4o5mLuokczhzjAgGwUZBAmOKZknArSxLKmXtIi2AxQ==
 
 send@0.18.0:
   version "0.18.0"
