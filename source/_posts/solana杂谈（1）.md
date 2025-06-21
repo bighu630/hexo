@@ -78,7 +78,7 @@ solana使用的BPF vm执行合约
 合约生命周期有BPF loader系列系统合约管理.通常情况下需要将合约编码成wasm的二进制码然后部署在solana链上
 
 对于合约开发，合约需要与solana链交互，所以并不是所有语言都可以开发solana合约，需要对应语言实现solana program sdk 并且可以编译成wasm的二进制码
-目前来看只有（rust/c/c++）其他语言有一些设置实现的sdk,可能不太问题
+目前来看只有（rust/c/c++）其他语言有一些社区实现的sdk,可能存在问题
 
 ### solana的共识
 
