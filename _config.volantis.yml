@@ -427,66 +427,72 @@ custom_css:
     zoom-out: volantis-static/media/cursor/zoom-out.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
     zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
     grab: volantis-static/media/cursor/openhand.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
-    font_smoothing: true # font-smoothing for webkit
-    max_width: 2000px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
-    scrollbar:
-      size: 4px
-      border: 2px
-    navbar:
-      height: 64px
-      width: auto # auto, max
-      effect: [shadow, floatable, blur] # [shadow, floatable, blur]
-    sidebar:
-      effect: [shadow, floatable, blur] # [shadow, floatable, blur]
-    body:
-      effect: [shadow, floatable, blur] # [shadow, floatable, blur]
-      highlight:
-        language: true # show language of codeblock
-        grayscale: false # Enable grayscale effect
-      text_align: # left, right, justify, center
-        h1: left
-        h2: left
-        h3: left
-        h4: left
-        p: justify
-    gap:
-      h2: 8px # Spacing above H2 (only px unit)
-      h3: 6px # Spacing above H3 (only px unit)
-      h4: 4px # Spacing above H4 (only px unit)
-      p: 8px # Paragraph spacing between paragraphs
-      line_height: normal # normal, 1.5, 1.75, 2 ...
-    border_radius:
-      card: 8px
-      codeblock: 4px
-      searchbar: 8px
-      button: 4px
-    fontsize:
-      root: 16px
-      h1: 1.5rem # 不推荐用在文章中
-      h2: 1.5rem
-      h3: 1.25rem
-      h4: 1.125rem
-      h5: 1.1rem
-      h6: 1.1rem
-      list: .9375rem
-      meta: .875rem
-      code: .8125rem
-      footnote: .78125rem
-    fontfamily:
-      logofont:
-        fontfamily: '"PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-        name: 'Varela Round'
-        url: https://github.com/paraself/PingFang-Fonts/raw/master/PingFang%20Medium.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
-        weight: normal
-        style: normal
-      bodyfont:
-        fontfamily: '"PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-        name: 'PingFang Medium.ttf'
-        url: https://github.com/paraself/PingFang-Fonts/raw/master/PingFang%20Medium.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
-        weight: normal
-        style: normal
-      codefont:
-        fontfamily: 'hack'
+  font_smoothing: true # font-smoothing for webkit
+  max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  scrollbar:
+    size: 4px
+    border: 2px
+    background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
+    hover_background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
+  navbar:
+    height: 64px
+    width: auto # auto, max
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  sidebar:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  body:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    highlight:
+      language: true # show language of codeblock
+      grayscale: true # Enable grayscale effect
+    text_align: # left, right, justify, center
+      h1: left
+      h2: left
+      h3: left
+      h4: left
+      p: justify
+  gap:
+    h2: 24px # Spacing above H2 (only px unit)
+    h3: 12px # Spacing above H3 (only px unit)
+    h4: 8px # Spacing above H4 (only px unit)
+    p: 1em # Paragraph spacing between paragraphs
+    line_height: normal # normal, 1.5, 1.75, 2 ...
+  border_radius:
+    card: 8px
+    codeblock: 4px
+    searchbar: 8px
+    button: 4px
+  fontsize:
+    root: 16px
+    h1: 1.75rem # 不推荐用在文章中
+    h2: 1.5rem
+    h3: 1.25rem
+    h4: 1.125rem
+    h5: 1rem
+    h6: 1rem
+    list: .9375rem
+    meta: .875rem
+    code: .8125rem
+    footnote: .78125rem
+  fontfamily:
+    logofont:
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif'
+      name: 'Varela Round'
+      url: 'https://fonts.gstatic.com/s/varelaround/v13/5Q97LzR5U84o2zX_mo2m5ZUi.ttf'  # 示例 Google Fonts 链接
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: '"Roboto", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif'
+      name: 'Roboto'
+      url: 'https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf'
+      weight: normal
+      style: normal
+    codefont:
+      fontfamily: '"hack", "Menlo", "Consolas", "Courier New", "Ubuntu Mono", monospace'
+      name: 'Fira Code'
+      url: 'https://fonts.gstatic.com/s/firacode/v13/uU9MCBsK6J-mK3mkbhPZ8Z2J.ttf'
+      weight: normal
+      style: normal
       # name: 'Monaco'
       # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
       # weight: normal
