@@ -7,8 +7,12 @@
 - [x] 合约升级
 - [x] EVM系列
 - [ ] solidity合约漏洞
-
   - [x] the dao 漏洞
 
 - [ ] 克尔恺郭尔
   - [x] [那审美的](https://blog.whosworld.fun/2024/12/09/%E5%85%8B%E5%B0%94%E5%87%AF%E9%83%AD%E5%B0%94-%E9%82%A3%E5%AE%A1%E7%BE%8E%E7%9A%84/)
+
+- linux相关
+  - [ ] 修复sddm启动时被kill
+    > sudo systemctl disable getty@tty1.service
+    > sudo systemctl mask getty@tty1.service
