@@ -428,7 +428,7 @@ custom_css:
     zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
     grab: volantis-static/media/cursor/openhand.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
   font_smoothing: true # font-smoothing for webkit
-  max_width: 1200px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  max_width: 1400px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
   scrollbar:
     size: 4px
     border: 2px
@@ -441,7 +441,8 @@ custom_css:
   sidebar:
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   body:
-    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    effect: [shadow, floatable,blur] # [shadow, floatable, blur]
+    background: transparent 25%
     highlight:
       language: true # show language of codeblock
       grayscale: true # Enable grayscale effect
@@ -547,7 +548,7 @@ site_footer:
   # <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
   # <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2022 2024](/)'
+  copyright: '[Copyright © since 2022 2026](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -779,27 +780,36 @@ plugins:
     duration: 100000       # Duration (ms)
     fade: 750            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - volantis-static/media/wallpaper/minimalist/2020/001.webp
-      - volantis-static/media/wallpaper/minimalist/2020/002.webp
-      - volantis-static/media/wallpaper/minimalist/2020/003.webp
-      - volantis-static/media/wallpaper/minimalist/2020/004.webp
-      - volantis-static/media/wallpaper/minimalist/2020/005.webp
-      - volantis-static/media/wallpaper/minimalist/2020/006.webp
-      - volantis-static/media/wallpaper/minimalist/2020/012.webp
-      - volantis-static/media/wallpaper/minimalist/2020/016.webp
-      - volantis-static/media/wallpaper/minimalist/2020/019.webp
-      - volantis-static/media/wallpaper/minimalist/2020/025.webp
-      - volantis-static/media/wallpaper/minimalist/2020/033.webp
-      - volantis-static/media/wallpaper/minimalist/2020/034.webp
-      - volantis-static/media/wallpaper/minimalist/2020/035.webp
-      - volantis-static/media/wallpaper/minimalist/2020/038.webp
-      - volantis-static/media/wallpaper/minimalist/2020/039.webp
-      - volantis-static/media/wallpaper/minimalist/2020/042.webp
-      - volantis-static/media/wallpaper/minimalist/2020/046.webp
-      - volantis-static/media/wallpaper/minimalist/2020/051.webp
-      - volantis-static/media/wallpaper/minimalist/2020/052.webp
-      - volantis-static/media/wallpaper/minimalist/2020/054.webp
-      - volantis-static/media/wallpaper/minimalist/2020/056.webp
+      - https://s2.loli.net/2025/11/08/8RSzoBvx6PwMh3e.jpg
+      - https://s2.loli.net/2025/11/08/pFfABcZ32yMh1Sj.jpg
+      - https://s2.loli.net/2025/11/08/okgPNmqHExM31fB.jpg
+      - https://s2.loli.net/2025/11/08/KqFoHP5LpM2bBWD.png
+      - https://s2.loli.net/2025/11/08/6fsJNUGmuq9lkQy.jpg
+      - https://s2.loli.net/2025/11/08/seF9LowVjqKUZE1.png
+      - https://s2.loli.net/2025/11/08/o5NVBsKW1ygPcFb.jpg
+      - https://s2.loli.net/2025/11/08/kAOrCt5PLWX6Za4.jpg
+      - https://s2.loli.net/2025/11/08/wX74cxskYAZfoq2.jpg
+      # - volantis-static/media/wallpaper/minimalist/2020/001.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/002.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/003.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/004.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/005.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/006.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/012.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/016.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/019.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/025.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/033.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/034.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/035.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/038.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/039.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/042.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/046.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/051.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/052.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/054.webp
+      # - volantis-static/media/wallpaper/minimalist/2020/056.webp
 
 
   # APlayer is only available in mainland China.
