@@ -34,7 +34,7 @@
     "hexo-wordcount": "^6.0.1",
     "highlightjs": "^9.16.2",
     "instantsearch.js": "^4.82.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "lunr": "^2.3.9",
     "object-assign": "^4.1.1",
     "partial": "^0.0.7",
