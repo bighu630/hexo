@@ -582,7 +582,7 @@ color_scheme:
     site_footer: '#666'
 
     # 卡片背景色
-    card: '#fff'
+    card: '#ffffff'
     # 卡片上的普通文字
     text: '#444'
 
@@ -605,7 +605,7 @@ color_scheme:
     # 列表文字
     list: '#666'
     # 列表 hover 时的文字
-    list_hl: 'mix($color-theme, #000, 80)'
+    list_hl: '#333333'
     # 辅助性文字
     meta: '#888'
   # ------------
@@ -618,7 +618,7 @@ color_scheme:
     # 网站页脚文字
     site_footer: '#aaa'
     # 卡片背景色
-    card: '#444'
+    card: '#444444'
     # 卡片上的普通文字
     text: '#eee'
 
@@ -641,7 +641,7 @@ color_scheme:
     # 列表文字
     list: '#aaa'
     # 列表 hover 时的文字
-    list_hl: 'mix($color-theme, #fff, 80)'
+    list_hl: '#cccccc'
     # 辅助性文字
     meta: '#888'
     # 夜间图片亮度

@@ -1,0 +1,25 @@
+// Custom fix for Stylus color-card error
+// This file overrides the problematic lighten() calls
+
+// Fix for search modal
+#u-search .modal .modal-header
+  background: var(--color-card) !important
+
+// Fix for navbar
+.l_header.nav-sub .wrapper
+  background: var(--color-card) !important
+
+// Alternative: use a slightly lighter color without lighten()
+#u-search .modal .modal-header
+  background: rgba(255, 255, 255, 0.95) !important
+
+.l_header.nav-sub .wrapper
+  background: rgba(255, 255, 255, 0.95) !important
+
+// For dark mode
+[data-theme="dark"]
+  #u-search .modal .modal-header
+    background: rgba(68, 68, 68, 0.95) !important
+  
+  .l_header.nav-sub .wrapper
+    background: rgba(68, 68, 68, 0.95) !important
