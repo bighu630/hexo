@@ -43,7 +43,7 @@ if [ -n "$CHANGES" ]; then
     echo "📝 发现未提交的更改，正在提交..."
     git add .
     git commit -m "更新: $(date '+%Y-%m-%d %H:%M:%S')" || echo "ℹ️  提交跳过（可能没有实际更改）"
-    
+
     if git push; then
         echo "✅ 更改已推送到远程"
     else
@@ -72,7 +72,7 @@ if [ -f "_config.volantis.yml" ]; then
         sed -i "s/card: '#fff'/card: '#ffffff'/" _config.volantis.yml
         sed -i "s/card: '#444'/card: '#444444'/" _config.volantis.yml
     fi
-    
+
     # 修复mix函数调用
     sed -i "s/list_hl: 'mix(\$color-theme, #000, 80)'/list_hl: '#333333'/" _config.volantis.yml
     sed -i "s/list_hl: 'mix(\$color-theme, #fff, 80)'/list_hl: '#cccccc'/" _config.volantis.yml
@@ -92,7 +92,7 @@ else
     echo "$OUTPUT" | grep -i "error" | head -3
     echo ""
     echo "🔄 尝试修复后重新生成..."
-    
+
     # 尝试修复后重新生成
     npx hexo clean
     npx hexo g && echo "✅ 修复后生成成功" || {
@@ -112,35 +112,35 @@ if npx hexo deploy 2>&1 | grep -q "Deploy done"; then
     echo "✅ Hexo部署成功！"
 else
     echo "⚠️  Hexo部署失败，尝试方法2..."
-    
+
     # 方法2: 手动部署public目录
     echo "尝试方法2: 手动部署..."
     if [ -d "public" ]; then
         cd public
-        
+
         # 初始化或更新git
         if [ ! -d ".git" ]; then
             git init
             git remote add origin git@github.com:bighu630/bighu630.github.io.git 2>/dev/null || true
         fi
-        
+
         # 添加所有文件
         git add . 2>/dev/null || true
-        
+
         # 提交
         if git commit -m "部署: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null; then
             echo "✅ 提交成功"
         else
             echo "ℹ️  提交跳过（可能没有更改）"
         fi
-        
+
         # 推送
         if git push -f origin master 2>/dev/null; then
             echo "✅ 手动部署成功！"
         else
             echo "❌ 手动部署也失败"
         fi
-        
+
         cd ..
     else
         echo "❌ public目录不存在，无法部署"
@@ -160,19 +160,29 @@ echo ""
 
 # 显示最新文章
 echo "📰 最新发布的文章:"
-find public -name "*.html" -type f -exec ls -lt {} + 2>/dev/null | head -5 | while read line; do
-    # 提取文件路径
-    file=$(echo "$line" | awk '{print $NF}')
-    # 转换为文章路径
-    article_path=$(echo "$file" | sed 's|public/||' | sed 's|/index.html||')
-    # 提取日期
+
+# 1. 找出所有 html 文件
+# 2. 用 sed 清理掉开头的 public/ 和结尾的 index.html
+# 3. 用 grep -E '^[0-9]{4}' 极其精准地【只保留年份开头】的真实文章
+# 4. 用 sort -r 按真实的日期倒序排列
+# 5. 用 head -5 截取最新 5 篇
+find public -name "*.html" -type f 2>/dev/null | \
+sed -E 's|^public/||; s|/?index\.html$||; s|\.html$||' | \
+grep -E '^[0-9]{4}' | \
+sort -r | \
+head -5 | \
+while read -r article_path; do
+
+    # 提取日期（前三级目录，如 2026/06/08）
     article_date=$(echo "$article_path" | cut -d'/' -f1-3)
-    article_title=$(echo "$article_path" | cut -d'/' -f4)
-    
-    echo "  📅 $article_date"
-    echo "  📄 $article_title"
+    # 提取标题（第四级目录或文件名）
+    article_title=$(echo "$article_path" | cut -d'/' -f4-)
+
+    echo "  📅 发布日期: $article_date"
+    echo "  📄 文章标题: ${article_title:-（无标题）}"
     echo ""
 done
+
 
 echo "💡 提示:"
 echo "  • 页面更新可能需要1-2分钟生效"
