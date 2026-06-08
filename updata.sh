@@ -25,6 +25,8 @@ if ! git status &> /dev/null; then
 fi
 
 # 尝试拉取更新
+git add .
+git commit -m "chore:auto commit"
 if git pull --rebase; then
     echo "✅ 源码更新成功"
 else
