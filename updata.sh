@@ -25,14 +25,8 @@ if ! git status &> /dev/null; then
 fi
 
 # 尝试拉取更新
-if git pull --rebase; then
+if git pull; then
     echo "✅ 源码更新成功"
-else
-    echo "⚠️  拉取失败，尝试备用方案..."
-    git fetch --all
-    CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || echo "main")
-    git reset --hard origin/$CURRENT_BRANCH
-    echo "✅ 强制更新完成"
 fi
 
 # 提交本地更改（如果有）
@@ -41,7 +35,7 @@ if [ -n "$CHANGES" ]; then
     echo "📝 发现未提交的更改，正在提交..."
     git add .
     git commit -m "更新: $(date '+%Y-%m-%d %H:%M:%S')" || echo "ℹ️  提交跳过（可能没有实际更改）"
-    
+
     if git push; then
         echo "✅ 更改已推送到远程"
     else
@@ -70,7 +64,7 @@ if [ -f "_config.volantis.yml" ]; then
         sed -i "s/card: '#fff'/card: '#ffffff'/" _config.volantis.yml
         sed -i "s/card: '#444'/card: '#444444'/" _config.volantis.yml
     fi
-    
+
     # 修复mix函数调用
     sed -i "s/list_hl: 'mix(\$color-theme, #000, 80)'/list_hl: '#333333'/" _config.volantis.yml
     sed -i "s/list_hl: 'mix(\$color-theme, #fff, 80)'/list_hl: '#cccccc'/" _config.volantis.yml
@@ -90,7 +84,7 @@ else
     echo "$OUTPUT" | grep -i "error" | head -3
     echo ""
     echo "🔄 尝试修复后重新生成..."
-    
+
     # 尝试修复后重新生成
     npx hexo clean
     npx hexo g && echo "✅ 修复后生成成功" || {
@@ -110,35 +104,35 @@ if npx hexo deploy 2>&1 | grep -q "Deploy done"; then
     echo "✅ Hexo部署成功！"
 else
     echo "⚠️  Hexo部署失败，尝试方法2..."
-    
+
     # 方法2: 手动部署public目录
     echo "尝试方法2: 手动部署..."
     if [ -d "public" ]; then
         cd public
-        
+
         # 初始化或更新git
         if [ ! -d ".git" ]; then
             git init
             git remote add origin git@github.com:bighu630/bighu630.github.io.git 2>/dev/null || true
         fi
-        
+
         # 添加所有文件
         git add . 2>/dev/null || true
-        
+
         # 提交
         if git commit -m "部署: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null; then
             echo "✅ 提交成功"
         else
             echo "ℹ️  提交跳过（可能没有更改）"
         fi
-        
+
         # 推送
         if git push -f origin master 2>/dev/null; then
             echo "✅ 手动部署成功！"
         else
             echo "❌ 手动部署也失败"
         fi
-        
+
         cd ..
     else
         echo "❌ public目录不存在，无法部署"
@@ -166,7 +160,7 @@ find public -name "*.html" -type f -exec ls -lt {} + 2>/dev/null | head -5 | whi
     # 提取日期
     article_date=$(echo "$article_path" | cut -d'/' -f1-3)
     article_title=$(echo "$article_path" | cut -d'/' -f4)
-    
+
     echo "  📅 $article_date"
     echo "  📄 $article_title"
     echo ""
