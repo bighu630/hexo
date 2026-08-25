@@ -67,7 +67,11 @@ piplus是依照我对程序员（主要是后端开发）这个工作的理解�
 
 对于一个新项目，更重要的是要agent知道我们要做一个什么，根据我们要的做的产品，去做好功能模块的划分，核心数据结构设计，和整体交互流程，敲定这些之后就可以让ai开始着手实现我们的第一版（没眼看版本）。
 
-详细对齐视频：https://www.bilibili.com/video/BV144hg6WEkr/
+详细对齐视频：
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV144hg6WEkr&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 > 如果是在已有的项目再用这个工具继续，推荐一开始对负责人说“你是这个项目的负责人了，你先深入了解一下这个项目的情况，重点关注项目的中间件使用情况，功能模块划分，模块间的关联，以及核心数据结构”
 
@@ -77,13 +81,20 @@ piplus是依照我对程序员（主要是后端开发）这个工作的理解�
 
 看看我们优化了多少次
 
-<img src="https://img.whosworld.fun/file/1787639346450_image-20260825142858765.png" alt="image-20260825142858765" style="zoom:80%;" /><img src="https://img.whosworld.fun/file/1787639366788_image-20260825142921680.png" alt="image-20260825142921680" style="zoom:80%;" />
+<div style="display: flex; gap: 12px; align-items: flex-start;">
+  <img src="https://img.whosworld.fun/file/1787639346450_image-20260825142858765.png" alt="image-20260825142858765" style="zoom: 50%;" />
+  <img src="https://img.whosworld.fun/file/1787639366788_image-20260825142921680.png" alt="image-20260825142921680" style="zoom: 50%;" />
+</div>
 
 当然这些不是关键，关键是怎么和负责人反馈问题和需求
 
-bilibili.com/video/BV1N8hg6HEmx/
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1N8hg6HEmx&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 ### 我们的成品
 
-https://www.bilibili.com/video/BV1MWhg6xEuG/
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1MWhg6xEuG&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 

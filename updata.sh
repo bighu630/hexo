@@ -24,25 +24,17 @@ if ! git status &> /dev/null; then
     exit 1
 fi
 
+git add .
+git commit -m "更新: $(date '+%Y-%m-%d %H:%M:%S')"
+
 # 尝试拉取更新
 if git pull; then
     echo "✅ 源码更新成功"
 fi
 
 # 提交本地更改（如果有）
-CHANGES=$(git status --porcelain)
-if [ -n "$CHANGES" ]; then
-    echo "📝 发现未提交的更改，正在提交..."
-    git add .
-    git commit -m "更新: $(date '+%Y-%m-%d %H:%M:%S')" || echo "ℹ️  提交跳过（可能没有实际更改）"
-
-    if git push; then
-        echo "✅ 更改已推送到远程"
-    else
-        echo "⚠️  推送失败，继续执行..."
-    fi
-else
-    echo "ℹ️  没有未提交的更改"
+if git push; then
+    echo "✅ 更改已推送到远程"
 fi
 
 echo ""
