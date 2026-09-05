@@ -29,7 +29,6 @@ if git pull; then
 fi
 
 # 提交本地更改（如果有）
-<<<<<<< HEAD
 CHANGES=$(git status --porcelain)
 if [ -n "$CHANGES" ]; then
     echo "📝 发现未提交的更改，正在提交..."
@@ -43,10 +42,6 @@ if [ -n "$CHANGES" ]; then
     fi
 else
     echo "ℹ️  没有未提交的更改"
-=======
-if git push; then
-    echo "✅ 更改已推送到远程"
->>>>>>> 6991f6da79f1df70d624942f4a3f88e10a29928e
 fi
 
 echo ""
