@@ -24,20 +24,12 @@ if ! git status &> /dev/null; then
     exit 1
 fi
 
-# 尝试拉取更新
-git add .
-git commit -m "chore:auto commit"
-if git pull --rebase; then
+if git pull; then
     echo "✅ 源码更新成功"
-else
-    echo "⚠️  拉取失败，尝试备用方案..."
-    git fetch --all
-    CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || echo "main")
-    git reset --hard origin/$CURRENT_BRANCH
-    echo "✅ 强制更新完成"
 fi
 
 # 提交本地更改（如果有）
+<<<<<<< HEAD
 CHANGES=$(git status --porcelain)
 if [ -n "$CHANGES" ]; then
     echo "📝 发现未提交的更改，正在提交..."
@@ -51,6 +43,10 @@ if [ -n "$CHANGES" ]; then
     fi
 else
     echo "ℹ️  没有未提交的更改"
+=======
+if git push; then
+    echo "✅ 更改已推送到远程"
+>>>>>>> 6991f6da79f1df70d624942f4a3f88e10a29928e
 fi
 
 echo ""
@@ -175,11 +171,18 @@ while read -r article_path; do
 
     # 提取日期（前三级目录，如 2026/06/08）
     article_date=$(echo "$article_path" | cut -d'/' -f1-3)
+<<<<<<< HEAD
     # 提取标题（第四级目录或文件名）
     article_title=$(echo "$article_path" | cut -d'/' -f4-)
 
     echo "  📅 发布日期: $article_date"
     echo "  📄 文章标题: ${article_title:-（无标题）}"
+=======
+    article_title=$(echo "$article_path" | cut -d'/' -f4)
+
+    echo "  📅 $article_date"
+    echo "  📄 $article_title"
+>>>>>>> 6991f6da79f1df70d624942f4a3f88e10a29928e
     echo ""
 done
 
