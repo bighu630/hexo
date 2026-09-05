@@ -166,18 +166,15 @@ while read -r article_path; do
 
     # 提取日期（前三级目录，如 2026/06/08）
     article_date=$(echo "$article_path" | cut -d'/' -f1-3)
-<<<<<<< HEAD
     # 提取标题（第四级目录或文件名）
     article_title=$(echo "$article_path" | cut -d'/' -f4-)
 
     echo "  📅 发布日期: $article_date"
     echo "  📄 文章标题: ${article_title:-（无标题）}"
-=======
     article_title=$(echo "$article_path" | cut -d'/' -f4)
 
     echo "  📅 $article_date"
     echo "  📄 $article_title"
->>>>>>> 6991f6da79f1df70d624942f4a3f88e10a29928e
     echo ""
 done
 
